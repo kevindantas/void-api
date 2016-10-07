@@ -3,6 +3,7 @@ import user from './api/user'
 import auth from './api/auth'
 import team from './api/team'
 import gallery from './api/gallery'
+import service from './api/service'
 
 const router = new Router()
 
@@ -33,5 +34,6 @@ router.use('/users', user)
 router.use('/auth', auth)
 router.use('/team', team)
 router.use('/gallery', gallery)
+router.use('/service', service)
 
 export default router

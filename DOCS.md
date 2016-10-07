@@ -14,6 +14,13 @@
 	- [Retrieve gallery](#retrieve-gallery)
 	- [Update gallery](#update-gallery)
 	
+- [Service](#service)
+	- [Create service](#create-service)
+	- [Delete service](#delete-service)
+	- [Retrieve service](#retrieve-service)
+	- [Retrieve services](#retrieve-services)
+	- [Update service](#update-service)
+	
 - [Team](#team)
 	- [Create team](#create-team)
 	- [Delete team](#delete-team)
@@ -150,6 +157,77 @@
 | description			| 			|  <p>Gallery's description.</p>							|
 | picture			| 			|  <p>Gallery's picture.</p>							|
 | tags			| 			|  <p>Gallery's tags.</p>							|
+
+# Service
+
+## Create service
+
+
+
+	POST /service
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>admin access token.</p>							|
+| nome			| 			|  <p>Service's nome.</p>							|
+| descricao			| 			|  <p>Service's descricao.</p>							|
+| status			| 			|  <p>Service's status.</p>							|
+
+## Delete service
+
+
+
+	DELETE /service/:id
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>admin access token.</p>							|
+
+## Retrieve service
+
+
+
+	GET /service/:id
+
+
+## Retrieve services
+
+
+
+	GET /service
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| q			| String			| **optional** <p>Query to search.</p>							|
+| page			| Number			| **optional** <p>Page number.</p>							|
+| limit			| Number			| **optional** <p>Amount of returned items.</p>							|
+| sort			| String[]			| **optional** <p>Order of returned items.</p>							|
+| fields			| String[]			| **optional** <p>Fields to be returned.</p>							|
+
+## Update service
+
+
+
+	PUT /service/:id
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>user access token.</p>							|
+| nome			| 			|  <p>Service's nome.</p>							|
+| descricao			| 			|  <p>Service's descricao.</p>							|
+| status			| 			|  <p>Service's status.</p>							|
 
 # Team
 
